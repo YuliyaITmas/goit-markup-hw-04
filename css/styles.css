@@ -103,9 +103,9 @@ img {
 }
 .contacts-item {
   display: flex;
-  align-items: center;
 }
 .contacts-link {
+  align-items: center;
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -115,24 +115,15 @@ img {
 }
 .icon-envelope,
 .icon-phone {
-  color: currentColor;
+  fill: currentColor;
   margin-right: 10px;
 }
 .contacts-item.phone {
   margin-left: 30px;
 }
 .contacts-link:hover,
-.contacts-item:focus {
+.contacts-link:focus {
   color: var(--accent-color);
-}
-.contacts-item.envelope:hover,
-.contacts-item.phone:hover {
-  color: var(--active-button-color);
-  fill: var(--accent-color);
-}
-.icon-phone:hover,
-.icon-phone:focus {
-  fill: var(--accent-color);
 }
 
 /* стилизация футера */
@@ -198,7 +189,8 @@ img {
   justify-content: center;
   align-items: center;
 }
-.join-item:hover {
+.join-item:hover,
+.join-item:focus {
   background-color: var(--accent-color)
 }
 .join-text {
@@ -388,9 +380,11 @@ img {
 .social-item:focus {
   background-color: var(--accent-color);
 }
-.social-item:hover .icon-social {
+.social-item:hover .icon-social,
+.social-item:focus .icon-social {
   fill: var(--white-color);
 }
+
 /* section clients */
 .clients-title {
   margin-bottom: 50px;
@@ -422,10 +416,12 @@ img {
   border: none;
   fill: currentColor;
 }
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
 }
-.clients-link:hover .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: var(--accent-color);
 }
 
@@ -463,7 +459,7 @@ img {
   cursor: pointer;
 }
 .portfolio-button:hover,
-.portfolio-button:focus .portfolio-button.current {
+.portfolio-button:focus, .portfolio-button.current {
   background-color: var(--accent-color);
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -479,7 +475,7 @@ img {
   flex-basis: calc((100% - 60px) / 3);
 }
 .project-link:hover,
-.projec-link:focus {
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
